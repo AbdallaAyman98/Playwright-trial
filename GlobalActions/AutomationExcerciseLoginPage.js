@@ -23,10 +23,8 @@ class AutomationExcerciseLoginPage {
         const loginButton = await this.locators.getLocator('loginButton');
         await usernameInput.fill(username);
         await passwordInput.fill(password);
-        await Promise.all([
-            this.page.waitForNavigation(),
-            loginButton.click({ force: true })
-        ]);
+        await loginButton.click();
+    
         
     }
 
