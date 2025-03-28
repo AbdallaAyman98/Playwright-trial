@@ -1,0 +1,16 @@
+testName: Verify login error message
+testId: 1
+description: This test verifies that an error message appears when invalid creds are entered
+steps:
+  - page: AutomationExcerciseLoginPage
+    action: navigate
+    args: ["https://www.automationexercise.com/login"]
+  - page: AutomationExcerciseLoginPage
+    action: login
+    args: ["user@domain.com", "Password"]
+  - page: AutomationExcerciseLoginPage
+    action: verifyLoginErrorMessage
+    args: ["Your email or password is incorrect!"]
+
+
+

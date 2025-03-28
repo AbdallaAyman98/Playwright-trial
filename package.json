@@ -1,0 +1,15 @@
+{
+  "name": "playwright-trial",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.51.1",
+    "@types/node": "^22.13.13",
+    "js-yaml": "^4.1.0"
+  }
+}

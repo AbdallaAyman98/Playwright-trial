@@ -1,0 +1,31 @@
+{
+    "usernameField": {
+        "xpath": "//*[@id='form']/div/div/div[1]/div/form/input[2]"
+    
+    },
+    "passwordField": {
+        "css": "#password",
+        "id": "password",
+        "name": "password",
+        "xpath": "//*[@id='form']/div/div/div[1]/div/form/input[3]",
+        "placeholder": "Enter Password",
+        "label": "Password"
+    },
+    "loginButton": {
+        "css": "#loginButton",
+        "id": "loginButton",
+        "name": "login",
+        "xpath": "//*[@id='form']/div/div/div[1]/div/form/button",
+        "text": "Login",
+        "role": { "type": "button", "name": "Login" },
+        "testId": "login-btn"
+    },
+    "dashboard": {
+        "css": "#dashboard",
+        "id": "dashboard",
+        "xpath": "//div[@id='dashboard']"
+    },
+    "errorMessage": {
+        "xpath": "//*[@id='form']/div/div/div[1]/div/form/p"
+    }
+}
