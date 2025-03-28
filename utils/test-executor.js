@@ -5,7 +5,7 @@ const path = require("path");
 // Function to dynamically import the correct page object
 async function getPageObject(page, pageName) {
     try {
-        const PageObject = require(`../GlobalActions/${pageName}.js`); // Dynamically load the class
+        const PageObject = require(`../ActionHandlers/${pageName}.js`); // Dynamically load the class
         return new PageObject(page); // Instantiate with Playwright page
     } catch (error) {
         throw new Error(`Failed to load page object: ${pageName} - ${error.message}`);

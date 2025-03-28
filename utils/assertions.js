@@ -1,6 +1,6 @@
 const { expect } = require("@playwright/test");
 
-class GlobalAssertions {
+class AssertionEngine {
     /**
      * Assert that a condition is true
      * @param {boolean} condition
@@ -143,4 +143,4 @@ class GlobalAssertions {
     }
 }
 
-module.exports = GlobalAssertions;
+module.exports = AssertionEngine;

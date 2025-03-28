@@ -55,7 +55,7 @@ class RunLocators {
                     elementLocator = this.page.getByRole(locator.type, { name: locator.name });
                     break;
                 default:
-                    console.warn(`⚠️ Unsupported locator type: ${type}`);
+                    console.warn(`Unsupported locator type: ${type}`);
                     continue;
             }
     
